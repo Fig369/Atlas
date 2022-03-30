@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid Elements</h1>
+
+    <p>
+      A Grid Layout must have a parent element with the
+      <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.
+    </p>
+
+    <p>
+      Direct child element(s) of the grid container automatically becomes grid
+      items.
+    </p>
+
+    <div class="grid-container">
+      <div class="grid-item">HTML</div>
+      <div class="grid-item">Definition</div>
+      <div class="grid-item">Example</div>
+      <div class="grid-item">What is a tag?</div>
+      <div class="grid-item">
+        The < html > tag represents the root of an HTML document.
+      </div>
+      <div class="grid-item">Example</div>
+      <div class="grid-item">what is html?</div>
+      <div class="grid-item">
+        HTML (HyperText Markup Language) is the code that is used to structure a
+        web page and its content
+      </div>
+      <div class="grid-item">Example</div>
+    </div>
+  </body>
+</html>
