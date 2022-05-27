@@ -1,0 +1,40 @@
+#red {
+    color: rgb(255, 78, 14);
+}
+.green {
+    color: rgba(58, 182, 114, 0.801);
+}
+.big {
+    font-size: 25px;
+    line-height: 30px;
+}
+.bold {
+    font-style: bold;
+}
+div {
+    height: 100px;
+    width: 100px;
+}
+.box-1 {
+    background-color: rgb(185, 33, 33);
+}
+.box-2 {
+    background-color: #4682b4
+}
+body {
+    background-color: #333;
+    color: white;
+}
+#cool-font {
+    font-family: 'Press Start 2P', cursive;
+}
+.border {
+    border: 3px solid steelblue;
+    border-radius: 25px;
+}
+.img {
+    background-image: url("https://media.istockphoto.com/photos/astronaut-on-foreign-planet-in-front-of-spacetime-portal-light-picture-id1305960650?b=1&k=20&m=1305960650&s=170667a&w=0&h=bMyBB1S4cl1xe83ZDVy37lc-SdELIYPe472VXRuCVw8=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

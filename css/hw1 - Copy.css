@@ -1,0 +1,77 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Navigation */
+nav {
+  height: 8vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #333;
+  color: #fff;
+}
+
+nav ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: blue;
+}
+
+/* Content */
+.content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+.content p {
+  padding: 0 4rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  height: 10vh;
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  cursor: pointer;
+}
+
+footer p:hover {
+  color: blue;
+  transition: 0.4s;
+}
