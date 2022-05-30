@@ -1,0 +1,5 @@
+var os = require("os")
+console.log("Platform: " + os.platform())
+console.log("Architecture: " + os.arch())
+console.log("Uptime: " + os.uptime())
+console.log("Release: "+ os.release)

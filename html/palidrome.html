@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+function addNums(...nums){
+    let res= nums.reduce((num1, num2) => num1 + num2)
+    return res
+}
+
+function fibonacci(num) {
+    if (num <= 1) return 1;
+  
+    return fibonacci(num - 1) + fibonacci(num - 2);
+}
+
+console.log(fibonacci(2))
+console.log(addNums(1,2))
+console.log(addNums(30,60,90))
+
+let x = 1
+let y = 2
+let z = 3
+let r = 10
+let abc = "hello world"
+let one23 = addNums(x,y,z)
+let three21 = addNums(x * y *z)
+let easy = x * y * z
+
+
+
+console.log(addNums(x,y))
+console.log(addNums([x,y,z]))
+console.log(addNums([x+y+z * z+x+y]))
+console.log(addNums([x+y+z] * [z+x+y]))
+console.log(addNums(x,abc))
+console.log(addNums(abc,y))
+console.log(addNums(one23,three21))
+console.log(addNums(one23 * three21))
+console.log(three21 * addNums(one23, abc.length))
+console.log(addNums(z+(x * x), y-(y - y), x*(z * z)) / Math.PI)
+console.log(easy)
+console.log(easy ** addNums(1 * z,2 * y,3 *x))
+
+
+function range(from, to, reverse) {
+  // Make sure our inputs are actually numbers
+  if (Number(from) != from || Number(to) != to) {
+    throw new TypeError("range() expects a Number as both it's first and second argument");
+  }
+
+  let o = []; // initialize our output array
+  
+  // get the lowest value argument as our starting index
+  let i = Math.min(from, to);
+  
+  // get the highest value argument as our ending index
+  let x = Math.max(from, to); 
+
+  // push i onto our output array and then increment until i == x
+  while (i <= x) { o.push(i); i++; }
+
+  // reverse the range order if necessary
+  if (reverse) { o = o.reverse(); }
+  
+  // return our output array
+  return o;
+}
+
+function sum(range) {
+  if (!(range instanceof Array)) {
+    throw new TypeError("sum() expects an Array as it's only argument");
+  } return range.reduce((a,b) => a+=b);
+}
+
+let a = range(1,10);
+let b = range(8, 5);
+let c = range(5,2,-1);
+let d = range(10, 1, 1);
+let e = range(1, 10, -1);
+let f = range(1, 10, 0)
+let g = range(1, 1)
+let h = sum(range(1, 10))
+
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
+console.log(f)
+console.log(g)
+console.log(h)
+console.log(range('test', 10)); // TypeError
+console.log(range(1, 'test')); // TypeError
+
+console.log(sum(a)); // 55
+console.log(sum(b)); // 14
+console.log(sum(c)); // 14
+console.log(sum(d)); // 5
+console.log(sum(e)); // 10
+console.log(sum('test')); // TypeError
+
+console.log(sum(range([x, r]))); // pass the array correctly 
+
+console.log(range(1, 10));  
+
+console.log(range(8, 5));
+
+console.log(range(5, 2, -1));
+
+console.log(range(10, 1, 1));
+
+
+
+console.log(sum(range(1, 10)));  
+
+console.log(range(y, z))
+    </script>
+</body>
+</html>
